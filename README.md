@@ -1,7 +1,7 @@
 Proyecto de Automatización con Selenium
 # Proyecto de Automatización con Selenium WebDriver  
 **Autor:** Liam Antillón  
-**Curso:** Calidad y Pruebas de Software  
+**Curso:** Calidad del de Software  
 **Profesor:** Lorena Ramírez Corredor 
 **Año:** 2025  
 
