@@ -152,7 +152,7 @@ py -m tests.test_login
 El proyecto utiliza **Git** y está versionado públicamente en GitHub.
 
 Repositorio:  
-https://github.com/Wookixx/SeleniumProject
+[https://github.com/Wookixx/SeleniumProject](https://github.com/Wookix/SeleniumProject)
 
 ---
 
