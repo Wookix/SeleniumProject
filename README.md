@@ -20,6 +20,7 @@ la cual se utiliza comúnmente para prácticas y pruebas de automatización.
 - **Microsoft Edge WebDriver**
 - **Page Object Model (POM)**
 - **Git / GitHub para control de versiones**
+-  **VS Code**
 
 ---
 
