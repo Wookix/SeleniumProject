@@ -49,127 +49,114 @@ SeleniumProject/
 │── prueba.txt             # Archivo para pruebas de carga
 │── table_data.csv         # Resultado exportado de tabla
 
- Automatizaciones Incluidas (6 Casos de Prueba)
-1️⃣ Login Automático
+# 🧩 Casos de Prueba Automatizados (6)
 
-Ingresa a la sección "Form Authentication"
+A continuación, la lista oficial de pruebas automatizadas incluidas en este repositorio.
 
-Completa usuario y contraseña válidos
+---
 
-Verifica inicio de sesión correcto
+## ** Caso 1 — Login Automático**
 
-Ejecutar:
+✔ Ingresa a *Form Authentication*  
+✔ Completa usuario y contraseña  
+✔ Verifica el mensaje de inicio exitoso  
+
+**Ejecutar:**
 
 py -m tests.test_login
 
-2️⃣ Descarga de Archivo
+---
 
-Accede a "File Download"
+## ** Caso 2 — Navegación entre Módulos**
 
-Descarga un archivo disponible
+✔ Accede a distintos módulos del sitio  
+✔ Cambia entre páginas  
+✔ Valida que los títulos coincidan  
 
-Verifica que el archivo se haya guardado
+**Ejecutar:**
 
-Ejecutar:
+py -m tests.test_navigation
 
-py -m tests.test_download
+---
 
-3️⃣ Subida de Archivo
+## ** Caso 3 — Inputs y Dropdown**
 
-Ingresa a "File Upload"
+✔ Modifica valores de un campo  
+✔ Selecciona opciones en un dropdown  
+✔ Verifica los cambios  
 
-Selecciona un archivo local
+**Ejecutar:**
 
-Envía el formulario y confirma el upload
+py -m tests.test_form
 
-Ejecutar:
+---
 
-py -m tests.test_upload
+## ** Caso 4 — Web Scraping de Tablas**
 
-4️⃣ Búsqueda de Elementos
+✔ Accede a *Sortable Data Tables*  
+✔ Extrae datos de la tabla HTML  
+✔ Exporta contenido a CSV  
 
-Entra a "Dynamic Controls"
-
-Busca boton "Remove/Add"
-
-Interactúa y valida cambios dinámicos
-
-Ejecutar:
-
-py -m tests.test_search
-
-5️⃣ Contenido Dinámico
-
-Navega a "Dynamic Content"
-
-Refresca elementos dinámicos
-
-Extrae y valida texto generado
-
-Ejecutar:
-
-py -m tests.test_dynamic
-
-6️⃣ Lectura de Tabla y Exportación CSV
-
-Accede a "Sortable Data Tables"
-
-Lee datos de tabla HTML
-
-Exporta datos a un archivo CSV
-
-Ejecutar:
+**Ejecutar:**
 
 py -m tests.test_table
 
-▶️ Cómo Ejecutar el Proyecto
-1. Instalar dependencias
+---
+
+## ** Caso 5 — Descarga de Archivos**
+
+✔ Ingresa a *File Download*  
+✔ Descarga un archivo disponible  
+✔ Valida su existencia en el equipo  
+
+**Ejecutar:**
+
+py -m tests.test_download
+
+---
+
+## ** Caso 6 — Carga de Archivos**
+
+✔ Usa el módulo *File Upload*  
+✔ Selecciona archivo local  
+✔ Confirma el upload exitoso  
+
+**Ejecutar:**
+
+py -m tests.test_upload
+
+---
+
+## 🚀 ¿Cómo Ejecutar Todo el Proyecto?
+
+1. Instalar dependencias:
+
 pip install selenium
 
-2. Verificar WebDriver
+2. Crear la carpeta SeleniumDrivers en C: y Verificar que `msedgedriver.exe` esté instalado en la carpeta
 
-Coloca el driver aquí:
+C:\SeleniumDrivers/msedgedriver.exe
 
-C:\SeleniumDrivers\msedgedriver.exe
+3. Ejecutar cualquier caso de prueba:
 
-3. Ejecutar cualquier caso de prueba
 py -m tests.nombre_del_test
-
 
 Ejemplo:
 
 py -m tests.test_login
 
- Metodología Aplicada
+---
 
-Automatizaciones basadas en el principio AAA (Arrange–Act–Assert)
+## 📌 Versionamiento
 
-Diseño estructurado usando POM (Page Object Model)
+El proyecto utiliza **Git** y está versionado públicamente en GitHub.
 
-Separación entre:
+Repositorio:  
+https://github.com/Wookixx/SeleniumProject
 
-lógica de negocio (pages/)
+---
 
-scripts de prueba (tests/)
+## 📄 Licencia
 
-configuración del navegador (config.py)
-
- Resultados
-
-El sistema ejecuta correctamente las seis automatizaciones solicitadas.
-Todos los casos fueron verificados y documentados en el informe entregado.
-
- Control de Versiones (Git)
-
-Comandos utilizados:
-
-git init
-git add .
-git commit -m "Primer commit - Proyecto Selenium automatizaciones"
-git branch -M main
-git remote add origin https://github.com/Wookix/SeleniumProject.git
-git push -u origin main
-
-📄 Licencia
-
-Este proyecto es de uso académico y no está destinado para producción.
+Proyecto académico sin fines comerciales.  
+Uso libre para aprendizaje y práctica.
